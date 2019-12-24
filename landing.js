@@ -37,7 +37,7 @@ const colorChoice = function(event) {
         color = "multicolor";
     }
     if (system === "ps4" && color === "black") {
-        document.getElementById("choiceImage").src = "http://fox.mmgn.com/mmgn/articles/normal/the-ps4-controller-is-fantastic-from-someone-who-hates-the-ps3-controller-1099668.jpg";
+        document.getElementById("choiceImage").src = "https://content.abt.com/image.php/big-3001538.jpg?image=/images/products/BDP_Images/big-3001538.jpg&canvas=1&quality=80&min_w=600&min_h=400";
         document.getElementById("price").innerHTML = "$59.99";
     } else if (system === "ps4" && color === "white") {
         document.getElementById("choiceImage").src = "https://playone.com.lb/images/detailed/211/d1q9reikbwb3.jpg";
