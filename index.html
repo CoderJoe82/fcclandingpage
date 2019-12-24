@@ -10,28 +10,51 @@
 </head>
 
 <body>
-    <section id="one">
-        <h1>Looking for Game Controllers? Choose your system!</h1>
+    <section id="systemSelect">
+        <h1>Game controllers for everyone! Choose your system!</h1>
         <div id="imageHolder">
-            <div class="imageHome">
-                <a href="#colorSelection"><img class="controllerImages" src="https://i.imgur.com/9mppTz5.png" alt="Playstation 4 Controller"></a>
+            <div class="systemHome" id="ps4Home">
+                <a href="#colorSelection"><img class="systemImages" id="ps4" src="https://i.imgur.com/9mppTz5.png" alt="Playstation 4 Controller"></a>
             </div>
-            <div class="imageHome" id="xboxHome">
-                <a href="#colorSelection"><img class="controllerImages" id="xbox" src="https://i.imgur.com/vmjUvVg.png" alt="Xbox One Controller"></a>
+            <div class="systemHome" id="xboxHome">
+                <a href="#colorSelection"><img class="systemImages" id="xbox" src="https://i.imgur.com/vmjUvVg.png" alt="Xbox One Controller"></a>
             </div>
-            <div class="imageHome">
-                <a href="#colorSelection"><img class="controllerImages" src="https://i.imgur.com/Qd0L5SM.png" alt="Nintendo Switch Controller"></a>
+            <div class="systemHome" id="switchHome">
+                <a href="#colorSelection"><img class="systemImages" id="switch" src="https://i.imgur.com/Qd0L5SM.png" alt="Nintendo Switch Controller"></a>
             </div>
         </div>
     </section>
     <section id="colorSelection">
-        <a href="#one">
-            <h1>What color would you like your controller to be?</h1>
+        <h1>What color would you like your controller to be?</h1>
+        <div id="colorHolder">
+            <a href="#controllerPictures">
+                <div class="colorBox" id="white"></div>
+            </a>
+            <a href="#controllerPictures">
+                <div class="colorBox" id="black"></div>
+            </a>
+            <a href="#controllerPictures">
+                <div class="colorBox" id="red"></div>
+            </a>
+            <a href="#controllerPictures">
+                <div class="colorBox" id="multicolor"></div>
+            </a>
+        </div>
+        <a href="#systemSelect" id="colorRestart">
+            <button class="clearSelections" onclick="resetSelections()">Restart</button>
         </a>
-        <a href="#one" id="colorRestart">
-            <div>
-                <span id="restartColorText">Restart</span>
+    </section>
+    <section id="controllerPictures">
+        <h1>Choose your controller!</h1>
+        <div id="controllerHolder">
+            <div id="purchaseSection">
+                <img src="" id="choiceImage" alt="chosenController">
+                <p id="price"></p>
+                <button id="purchaseButton">Purchase</button>
             </div>
+        </div>
+        <a href="#systemSelect" id="colorRestart">
+            <button class="clearSelections" onclick="resetSelections()">Restart</button>
         </a>
     </section>
 </body>
